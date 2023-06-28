@@ -1,0 +1,197 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root {
+    --primary-color: #3525D3;
+    --white-color: #fff;
+    --black-color: #3C4A57;
+    --light-gray: #E4E8EE;
+}
+html{
+    height:100%;
+}
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.wrapper {
+    padding: 50px 25px 0;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+    .wrapper::before {
+        content: '';
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        z-index: -1;
+        width: 100%;
+        
+    }
+
+    .wrapper .headline {
+        text-align: center;
+        padding-bottom: 48px;
+    }
+
+       .wrapper .headline h1 {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 52px;
+            color: darkorange;
+            transition: 0.5s;
+        }
+h1:hover {
+    text-shadow: 0 1px 0 #ccc,0 2px 0 #ccc,0 3px #ccc,0 4px #ccc,0 5px #ccc,0 6px #ccc,0 7px #ccc,0 8px #ccc,0 9px #ccc,0 10px #ccc,0 11px #ccc,0 20px 30px rgba(0,0,0,0.5);
+}
+
+    .wrapper .form {
+        max-width: 350px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .wrapper .form-group {
+        margin-bottom: 15px;
+    }
+
+        .wrapper .form-group input {
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.1px;
+            padding: 11px 15px;
+            height: 48px;
+            border-radius: 5px;
+            color: var(--black-color);
+            border: 1px solid #e4e8ee;
+            box-shadow: none;
+            width: 100%;
+        }
+
+            .wrapper .form-group input:focus {
+                outline: none;
+            }
+
+            .wrapper .form-group input::placeholder {
+                color: var(--black-color);
+                font-weight: 400;
+                font-size: 14px;
+            }
+
+    .wrapper .btn {
+        width: 100%;
+        margin: 15px 0 30px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 700;
+        padding: 12px 29px;
+        height: 48px;
+        text-transform: uppercase;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+        .wrapper .btn:focus {
+            outline: none;
+        }
+
+    .wrapper .forget-password {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+
+     .wrapper .forget-password a {
+            color: lightskyblue;
+        }
+     .wrapper .forget-password .check-box{
+         font-size:15px;
+         color:var(--black-color);
+     }
+        
+
+    .wrapper .visit {
+        text-align: center;
+        padding-bottom: 48px;
+    }
+
+    .wrapper .visit a {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 52px;
+        color: mediumvioletred;
+    }
+
+@media (max-width:1030px) {
+    .wrapper::before {
+        left: -25%;
+        min-height: 60vh;
+        height: 500px;
+    }
+}
+
+@media (max-width:767px) {
+    .wrapper {
+        max-width: 550px;
+    }
+
+        .wrapper .headline h1 {
+            font-size: 22px;
+            line-height: 25px;
+        }
+}
+.wrap-login {
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ 
+::-ms-reveal{
+    display:none;
+}
